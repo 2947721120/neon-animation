@@ -1,20 +1,20 @@
 # neon-animation
 
-`neon-animation` is a suite of elements and behaviors to implement pluggable animated transitions for Polymer Elements using [Web Animations](https://w3c.github.io/web-animations/).
+`neon-animation` 是一套元素和行为来实现可插入动画过渡的聚合物元件使用 [Web Animations](https://w3c.github.io/web-animations/).
 
-*Warning: The API may change.*
+*警告：原料药可能会改变。*
 
-* [A basic animatable element](#basic)
-* [Animation configuration](#configuration)
-  * [Animation types](#configuration-types)
-  * [Configuration properties](#configuration-properties)
-  * [Using multiple animations](#configuration-multiple)
-  * [Running animations encapsulated in children nodes](#configuration-encapsulation)
-* [Page transitions](#page-transitions)
-  * [Shared element animations](#shared-element)
-  * [Declarative page transitions](#declarative-page)
-* [Included animations](#animations)
-* [Demos](#demos)
+* [一个基本的动画元素](#basic)
+* [动画配置](#configuration)
+  * [动画类型](#configuration-types)
+  * [配置属性](#configuration-properties)
+  * [使用多个动画](#configuration-multiple)
+  * [运行动画封装在子节点](#configuration-encapsulation)
+* [页面转换](#page-transitions)
+  * [共享元素的动画](#shared-element)
+  * [声明页面过渡](#declarative-page)
+* [包含的动画](#animations)
+* [演示](#demos)
 
 <a name="basic"></a>
 ## A basic animatable element
@@ -31,7 +31,7 @@ Polymer({
     animationConfig: {
       value: function() {
         return {
-          // provided by neon-animation/animations/scale-down-animation.html
+          //霓虹灯动画/动画/比例缩小，animation.html提供
           name: 'scale-down-animation',
           node: this
         }
@@ -39,11 +39,11 @@ Polymer({
     }
   },
   listeners: {
-    // this event is fired when the animation finishes
+    // 当动画结束这个事件被触发
     'neon-animation-finish': '_onNeonAnimationFinish'
   },
   animate: function() {
-    // run scale-down-animation
+    // 运行尺度缩小的动画
     this.playAnimation();
   },
   _onNeonAnimationFinish: function() {
@@ -76,12 +76,12 @@ Polymer({
       value: function() {
         return {
           'entry': {
-            // provided by neon-animation/animations/scale-up-animation.html
+            // 霓虹灯动画/动画/扩大规模，animation.html提供provided by neon-animation/animations/scale-up-animation.html
             name: 'scale-up-animation',
             node: this
           },
           'exit': {
-            // provided by neon-animation/animations/fade-out-animation.html
+            // 霓虹灯动画/动画/淡出，animation.html提供provided by neon-animation/animations/fade-out-animation.html
             name: 'fade-out-animation',
             node: this
           }
@@ -95,7 +95,7 @@ Polymer({
   show: function() {
     this.opened = true;
     this.style.display = 'inline-block';
-    // run scale-up-animation
+    // 运行放大动画run scale-up-animation
     this.playAnimation('entry');
   },
   hide: function() {
