@@ -17,9 +17,9 @@
 * [演示](#demos)
 
 <a name="basic"></a>
-## A basic animatable element
+## 一个基本的动画元素
 
-Elements that can be animated should implement the `Polymer.NeonAnimatableBehavior` behavior, or `Polymer.NeonAnimationRunnerBehavior` if they're also responsible for running an animation.
+可动画元素应实施 `Polymer.NeonAnimatableBehavior` behavior, or `Polymer.NeonAnimationRunnerBehavior` 如果他们也负责运行动画。
 
 ```js
 Polymer({
@@ -55,12 +55,12 @@ Polymer({
 [Live demo](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/doc/basic.html)
 
 <a name="configuration"></a>
-## Animation configuration
+## 动画配置
 
 <a name="configuration-types"></a>
-### Animation types
+### 动画类型
 
-An element might run different animations, for example it might do something different when it enters the view and when it exits from view. You can set the `animationConfig` property to a map from an animation type to configuration.
+一个元素可以运行不同的动画，比如它可能会做一些不同的事情，当它进入和退出时的视野。你可以设置 `animationConfig` 财产从一个动画式地图配置.
 
 ```js
 Polymer({
