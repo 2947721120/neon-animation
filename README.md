@@ -113,7 +113,7 @@ Polymer({
 
 [Live demo](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/doc/types.html)
 
-You can also use the convenience properties `entryAnimation` and `exitAnimation` to set `entry` and `exit` animations:
+你也可以使用方便的特性 `entryAnimation` and `exitAnimation` to set `entry` and `exit` animations:
 
 ```js
 properties: {
