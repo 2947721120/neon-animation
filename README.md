@@ -291,10 +291,10 @@ properties: {
  * `cascaded-animation` 运用动画的相互之间有一个延迟元件阵列。
 
 <a name="demos"></a>
-## Demos
+## 演示
 
- * [Grid to full screen](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/grid/index.html)
- * [Animation on load](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/load/index.html)
- * [List item to detail](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/list/index.html) (For narrow width)
- * [Dots to squares](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/tiles/index.html)
- * [Declarative](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/declarative/index.html)
+ * [网格的全屏幕](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/grid/index.html)
+ * [动画加载](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/load/index.html)
+ * [列表项的细节](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/list/index.html) (窄幅)
+ * [圆点广场](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/tiles/index.html)
+ * [声明](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/declarative/index.html)
