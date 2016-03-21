@@ -268,17 +268,17 @@ properties: {
 
 单元素的动画：
 
- * `fade-in-animation` Animates opacity from `0` to `1`.
- * `fade-out-animation` Animates opacity from `1` to `0`.
- * `scale-down-animation` Animates transform from `scale(1)` to `scale(0)`.
- * `scale-up-animation` Animates transform from `scale(0)` to `scale(1)`.
- * `slide-down-animation` Animates transform from `translateY(-100%)` to `none`.
- * `slide-up-animation` Animates transform from `none` to `translateY(-100%)`.
- * `slide-left-animation` Animates transform from `none` to `translateX(-100%)`;
- * `slide-right-animation` Animates transform from `none` to `translateX(100%)`;
- * `slide-from-left-animation` Animates transform from `translateX(-100%)` to `none`;
- * `slide-from-right-animation` Animates transform from `translateX(100%)` to `none`;
- * `transform-animation` Animates a custom transform.
+ * `fade-in-animation` 从动画的透明度 `0` to `1`.
+ * `fade-out-animation` 从动画的透明度 `1` to `0`.
+ * `scale-down-animation` 从动画变换 `scale(1)` to `scale(0)`.
+ * `scale-up-animation` 从动画变换 `scale(0)` to `scale(1)`.
+ * `slide-down-animation` 从动画变换 `translateY(-100%)` to `none`.
+ * `slide-up-animation` 从动画变换 `none` to `translateY(-100%)`.
+ * `slide-left-animation` 从动画变换 `none` to `translateX(-100%)`;
+ * `slide-right-animation` 从动画变换 `none` to `translateX(100%)`;
+ * `slide-from-left-animation` 从动画变换 `translateX(-100%)` to `none`;
+ * `slide-from-right-animation` 从动画变换 `translateX(100%)` to `none`;
+ * `transform-animation` 动画自定义转换.
 
 请注意，是有限制的，只有一个变换的动画可以同时应用于同一元素。使用自定义 `transform-animation` 结合变换的性质
 
