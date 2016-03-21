@@ -113,7 +113,7 @@ Polymer({
 
 [Live demo](http://morethanreal.github.io/neon-animation-demo/bower_components/neon-animation/demo/doc/types.html)
 
-你也可以使用方便的特性 `entryAnimation` and `exitAnimation` to set `entry` and `exit` animations:
+你也可以使用方便的特性 `entryAnimation` 和 `exitAnimation` 到开始 `entry` 和离开 `exit`动画:
 
 ```js
 properties: {
@@ -127,25 +127,23 @@ properties: {
 ```
 
 <a name="configuration-properties"></a>
-### Configuration properties
+### 配置属性
 
-You can pass additional parameters to configure an animation in the animation configuration object.
-All animations should accept the following properties:
+你可以通过额外的参数到动画中的配置对象设置动画，动画应该接受以下属性:
 
- * `name`: The name of an animation, ie. an element implementing `Polymer.NeonAnimationBehavior`.
- * `node`: The target node to apply the animation to. Defaults to `this`.
- * `timing`: Timing properties to use in this animation. They match the [Web Animations Animation Effect Timing interface](https://w3c.github.io/web-animations/#the-animationeffecttiming-interface). The
- properties include the following:
-     * `duration`: The duration of the animation in milliseconds.
-     * `delay`: The delay before the start of the animation in milliseconds.
-     * `easing`: A timing function for the animation. Matches the CSS timing function values.
+ * `name`: 一个动画的名字，即一个单元实施 `Polymer.NeonAnimationBehavior`.
+ * `node`: 运用动画的目标节点。默认值为 `this`.
+ * `timing`: 定时性能：采用动画。他们比赛 [Web Animations Animation Effect Timing interface](https://w3c.github.io/web-animations/#the-animationeffecttiming-interface). 它们包括以下：:
+     * `duration`: T动画的毫秒时间
+     * `delay`: 在毫秒动画的启动延迟。.
+     * `easing`: 对于动画的计时功能。与CSS定时功能的价值。.
 
-Animations may define additional configuration properties and they are listed in their documentation.
+动画可以定义附加的配置和他们的文件列。
 
 <a name="configuration-multiple"></a>
-### Using multiple animations
+### 使用多个动画
 
-Set the animation configuration to an array to combine animations, like this:
+设置动画配置阵列结合动画，像这样:
 
 ```js
 animationConfig: {
@@ -166,9 +164,9 @@ animationConfig: {
 ```
 
 <a name="configuration-encapsulation"></a>
-### Running animations encapsulated in children nodes
+### 封装在子节点运行动画
 
-You can include animations in the configuration that are encapsulated in a child element that implement `Polymer.NeonAnimatableBehavior` with the `animatable` property.
+你可以在被封装在一个孩子的元素，实现配置动画 `Polymer.NeonAnimatableBehavior` 与 `animatable` 财产.
 
 ```js
 animationConfig: {
@@ -185,18 +183,18 @@ animationConfig: {
 ```
 
 <a name="page-transitions"></a>
-## Page transitions
+## 页面转换
 
 *The artist formerly known as `<core-animated-pages>`*
 
-The `neon-animated-pages` element manages a set of pages to switch between, and runs animations between the page transitions. It implements the `Polymer.IronSelectableBehavior` behavior. Each child node should implement `Polymer.NeonAnimatableBehavior` and define the `entry` and `exit` animations. During a page transition, the `entry` animation is run on the new page and the `exit` animation is run on the old page.
+The `neon-animated-pages` 元管理一组页面之间切换，运行动画页面之间的转换。它实现了 `Polymer.IronSelectableBehavior` 行为。每个子节点应实施 `Polymer.NeonAnimatableBehavior` 定义入口 `entry` 和 `exit` 动画一个页面的过渡期间， `entry` 动画运行的新的一页， `exit` 动画运行旧的页面.
 
 <a name="shared-element"></a>
-### Shared element animations
+### 共享元素的动画
 
-Shared element animations work on multiple nodes. For example, a "hero" animation is used during a page transition to make two elements from separate pages appear to animate as a single element. Shared element animation configurations have an `id` property that identify they belong in the same animation. Elements containing shared elements also have a `sharedElements` property defines a map from `id` to element, the element involved with the animation.
+共享元素的动画作品在多个节点。例如，一个 "hero" 是一个动画的页面过渡到从单独的页面出现两元素的动画作为一个单一的元素中使用。共享元素动画配置有 `id` 属性，确定它们属于同一个动画。含有共同的元素也有一个 `sharedElements` 属性定义的映射 `id` 至元，与动画相关的元素。.
 
-In the incoming page:
+在输入页面：
 
 ```js
 properties: {
@@ -222,7 +220,7 @@ properties: {
 }
 ```
 
-In the outgoing page:
+在输出页面：
 
 ```js
 properties: {
@@ -249,11 +247,9 @@ properties: {
 ```
 
 <a name="declarative-page"></a>
-### Declarative page transitions
+### 声明的网页过渡 `entry-animation` 和 `exit-animation` 退出动画属性 `<neon-animated-pages>`, 这些动画将适用于所有网页过渡。
 
-For convenience, if you define the `entry-animation` and `exit-animation` attributes on `<neon-animated-pages>`, those animations will apply for all page transitions.
-
-For example:
+例如：
 
 ```js
 <neon-animated-pages id="pages" class="flex" selected="[[selected]]" entry-animation="slide-from-right-animation" exit-animation="slide-left-animation">
