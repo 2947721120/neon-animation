@@ -261,12 +261,12 @@ properties: {
 </neon-animated-pages>
 ```
 
-The new page will slide in from the right, and the old page slide away to the left.
+新的页面会从右侧滑入，与旧的网页溜左。
 
 <a name="animations"></a>
-## Included animations
+## 包括动画
 
-Single element animations:
+单元素的动画：
 
  * `fade-in-animation` Animates opacity from `0` to `1`.
  * `fade-out-animation` Animates opacity from `1` to `0`.
@@ -280,15 +280,15 @@ Single element animations:
  * `slide-from-right-animation` Animates transform from `translateX(100%)` to `none`;
  * `transform-animation` Animates a custom transform.
 
-Note that there is a restriction that only one transform animation can be applied on the same element at a time. Use the custom `transform-animation` to combine transform properties.
+请注意，是有限制的，只有一个变换的动画可以同时应用于同一元素。使用自定义 `transform-animation` 结合变换的性质
 
-Shared element animations
+共享元素的动画.
 
- * `hero-animation` Animates an element such that it looks like it scales and transforms from another element.
- * `ripple-animation` Animates an element to full screen such that it looks like it ripples from another element.
+ * `hero-animation` 将一个元素，它看起来像它的尺度、从一元。
+ * `ripple-animation` 将一个元素的全屏幕，它看起来像它的涟漪从另一个元素。
 
-Group animations
- * `cascaded-animation` Applys an animation to an array of elements with a delay between each.
+群体动画
+ * `cascaded-animation` 运用动画的相互之间有一个延迟元件阵列。
 
 <a name="demos"></a>
 ## Demos
